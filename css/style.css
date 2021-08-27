@@ -1,0 +1,373 @@
+/* *{
+    outline: 1px solid red;
+   } */
+   
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF5EB;
+    /* font-family: "Lato", "Arial", "san-serif"; */
+    font-family: BioRhyme;
+}
+/* header */
+header {
+    background: url(../img/t.JPG);
+    background-size: 50% ;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+ul {
+    padding: 0;
+}
+
+.navbar {
+    height: 50px;
+    padding: 20px auto;
+    
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    list-style: none;
+    text-align: center;
+}
+.navbar ul li {
+    flex:1;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+}
+.nav-item a {
+    color: #5E454B;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.4s ease-out;
+}
+.nav-item a:hover {
+    font-weight: bold;
+}
+
+.name {
+    color: #064420;
+    text-align: center;
+    margin-top: 32%;
+    
+}
+.name h1 {
+    margin-top: 0;
+}
+
+.name h2 {
+    margin-bottom: 0;
+}
+
+/* About Us */
+.about {
+    background-color: #B2B8A3;
+    color: white;
+    height: 230px;
+}
+.aboutus {
+    width: 65%;
+    margin: auto;
+    padding-top: 2%;
+    text-align: center;
+}
+/* location */
+/* .back::before {
+    content: "";
+    background: #FFF5EB url("../img/flower.jpg") no-repeat center center/contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #FFF5EB; 
+}*/
+
+.back{
+    position: relative;
+}
+.back:before{
+    content: '';
+    background: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), 
+        url("../img/flower.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 35%;
+    z-index: -1;
+} 
+
+.info {
+    z-index: 1;
+    padding-top: 2rem;
+}
+section .location {
+    background-color:white;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 4%;
+}
+.location h1 {
+    color: #064420;
+    text-align: center;
+    padding-top: 4%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    margin: auto;
+}
+table tr {
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+}
+table td {
+    text-align: left;
+    padding: 20px 0;
+}
+table td.icon {
+    background-size: 35px;
+    background-position: left 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+table td.icon{
+    background-size: 20px;
+    background-position: left 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+  
+table td.icon.spa{
+    background-image: url(../img/spa.png)
+}
+  
+table td.icon.phone{
+    background-image: url(../img/phone.png)
+}
+  
+table td.icon.mail{
+    background-image: url(../img/email.png)
+}
+table td.icon.clock{
+    background-image: url(../img/clock.png)
+}
+table td.icon.home{
+    background-image: url(../img/home.png)
+}
+.gmap {
+    height: 0;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 44%;
+    position: relative;
+}
+.gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Contact us */
+.contactus {
+    width: 80%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 6%;
+    border: 4px solid white;
+
+}
+.contactus h2 {
+    text-align: center;
+    color: #064420;
+}
+
+.cp_iptxt {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
+}
+.cp_iptxt input[type='text'] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 80%;
+    letter-spacing: 1px;
+    padding-left: 4em;
+}
+.cp_iptxt textarea[type='text'] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 80%;
+    letter-spacing: 1px;
+    padding-left: 4em;
+}
+.cp_iptxt input[type='text']:focus {
+    outline: none;
+}
+.cp_iptxt textarea[type='text']:focus {
+    outline: none;
+}
+.cp_iptxt textarea[type='text']:focus {
+    outline: none;
+}
+
+.ef {
+    padding: 4px 0;
+    border: 0;
+    border-bottom: 1px solid #064420;
+    background-color: transparent;
+}
+.ef ~ .focus_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.4s;
+    background-color: #064420;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+    width: 100%;
+    transition: 0.4s;
+}
+.ef ~ label {
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    color: #aaaaaa;
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+    font-size: 12px;
+    top: -16px;
+    transition: 0.3s;
+    color: #064420;
+}
+.btn {
+    
+    position: relative;
+    text-align: center;
+    display: block;
+    margin:  auto;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #064420;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}  
+.btn:hover{
+    opacity: 0.7;
+}
+.btn:active, .btn:focus {
+    top: 2px;
+}
+/* footer */
+footer {
+    background-color: #B2B8A3;
+    margin-bottom: 0;
+}
+    
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    list-style-type: none;
+    padding-top: 3%;
+}
+footer ul li {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.foot-item a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.4s ease-out;
+    margin: auto;
+}
+footer p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.foot-item a:hover {
+    font-weight: bold;
+}
+
+/* media */
+
+@media screen and (max-width:600px ) {
+
+    header {
+        background: none;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+    .nav-item a {
+        font-size: 0.7em;
+    }
+    .name h2 {
+        font-size: 80%;
+        
+    }
+/* about */
+    .about {
+        font-size: 0.8em;
+    }
+/* information */
+    section .location {
+        width: 80%;
+    }
+    table {
+        font-size: 0.8em;
+    }
+    .gmap {
+        width: 80%;
+    }
+/* footer */
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .foot-item a {
+        font-size: 0.8em;
+    }
+    footer p {
+        font-size: 0.8em;
+
+    }
+ 
+}
+  
+    
